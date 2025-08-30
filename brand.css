@@ -906,6 +906,36 @@ ul li a:hover{
 
 /* footer ends here  */
 
+#headboy{
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 0px;
+    padding-bottom: 30px;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+}
+
+#headboy #brry{
+    width: fit-content;
+    margin: 0px 0px;
+    margin-right: 0px;
+}
+.dot{
+  background-color: rgb(92, 180, 3);
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.web{
+  font-size: 8px;
+  font-weight: bold;
+  color: white;
+  margin-top: -5px;
+  cursor: pointer;
+  margin-left: 0px;
+}
 
 /* Cover container */
 .cover {
@@ -1967,5 +1997,23 @@ ul li a:hover{
     }
     .cart p{
         font-size: 50px;
+    }
+    .cover{
+    }
+    .cover .head{
+        padding-right: 0px;
+        width: fit-content;
+        padding-left: 15px;
+        margin-right: 10px;
+    }
+   .cover .right{
+        width: fit-content;
+        gap: 7px;
+        margin-right: 0px;
+        padding-right: 15px;
+    }
+    .sidebar #head{
+        padding-left: 0px;
+        width: fit-content;
     }
 }

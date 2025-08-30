@@ -439,7 +439,16 @@
 
 <div class="sect1  hidden">
     <div class="cart" >
-      <div class="imgs"></div>
+       <!-- <div class="" id="headboy">
+      <!-- <div class="img"><img src="homepicture.jpg" alt=""></div> -->
+      <!-- <div class="bryt">
+          <div class="studio">
+              <p>Bryt Studios</p>
+              <div class="dot"></div>
+          </div>
+          <p class="web">WEBSITE & BRAND DESIGN</p>
+      </div>
+    </div> -->
         <div class="work">
       <h1 >Let's Work</h1>
       <p class="span">together</p>
@@ -484,9 +493,52 @@
   </div>
 
   <!-- footer begins here  -->
+   <style>
+    @media (max-width:430px) {
+        #mody{
+        }
+        #mody #last{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #mode2{
+            padding: 0px 0px;
+            display: grid; 
+        }
+    }
 
-  <div class="footer hidden">
-    <div class="footer-div">
+    @media (max-width:370px) {
+        #mody{
+            /* background-color: rgb(13, 85, 48); */
+        }
+        #mody #last{
+            display: grid;
+            padding: 0px 0px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #mode #last a{
+            width: 100%;
+            display: block;
+        }
+    }
+     @media (max-width:320px) {
+        #mody{
+            /* background-color: rgb(13, 85, 48); */
+        }
+        #mody #last{
+            display: grid;
+            padding: 0px 0px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #mode #last a{
+            width: 100%;
+            display: block;
+        }
+    }
+   </style>
+
+  <div class="footer hidden" id="mody">
+    <div class="footer-div" id="mode2">
         <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Send us a Message</a></div>
         <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20" class="what">Whatsapp Chat</a></div>
     </div>
