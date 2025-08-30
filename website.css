@@ -135,7 +135,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(4px);
   background: rgba(0, 0, 0, 0.2);
   opacity: 0;
   pointer-events: none;
@@ -607,6 +607,11 @@
         letter-spacing: -1px;
         margin-bottom: 0px;
         display: block !important;
+        line-height: 22px;
+    }
+    .main .new{
+        margin: 0px 0px;
+        line-height: 22px;
     }
     .work-to{
         padding: 80px 65px;

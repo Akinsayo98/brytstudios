@@ -8,8 +8,84 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="website.css">
     <style>
-        @import url(website.css);
+        /* @import url(website.css); */
+        @media (max-width:405px) {
+            .work-to .details{
+                width: 100%;
+            }
+        }
+    
+
+        @media (max-width:369px) {
+            .title{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .flag{
+                width: 80%;
+                height: 50px;
+                margin-top: 0px 0px;
+                padding: 0px 0px;
+                background-size: cover;
+                background-position: center;
+                justify-items: end;
+                align-items: end;
+
+            }
+        }
+
+        @media (max-width:350px) {
+            .title{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            #nnew{
+                width: fit-content;
+                height: fit-content;
+                padding: 7px 20px;
+                margin: 0px 0px;
+                text-align: center;
+            }
+            .title .forecast{
+                margin-bottom: 0px;
+            }
+            .flag{
+                width: 80%;
+                height: 50px;
+                margin-top: 0px 0px;
+                padding: 0px 0px;
+                background-size: cover;
+                background-position: center;
+            }
+
+        }
+        
+        @media (max-width:360px) {
+            .work-to .details{
+                width: 100%;
+            }
+            .work-to .details p:nth-child(1){
+                font-size: 30px;
+            }
+            .work-to .details p:nth-child(2){
+                font-size: 25px;
+            }
+        }
+           @media (max-width:320px) {
+            .work-to .details{
+                width: 100%;
+            }
+            .cover i{
+                margin-left: 0px;
+                left: 20px;
+            }
+            .work-to .details p:nth-child(1){
+                font-size: 20px;
+            }
+            .work-to .details p:nth-child(2){
+                font-size: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -76,10 +152,10 @@
                     <img src="weather.png" alt="" srcset="">
                 </div>
                  <div class="title">
-                  <p>Forecast</p>
-                  <p>WEATHER</p>
-                  <p id="nnew">NEW</p>
-                  <div class="flag"></div>
+                    <p>Forecast</p>
+                    <p>WEATHER</p>
+                    <p id="nnew">NEW</p>
+                    <div class="flag"></div>
                  </div>
 
                  <div class="text">
