@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+      
+      @media (max-width:540px) {
+            .cover{
+                padding: 0px 0px;
+            }
+      }
+
+       i{
+        cursor: pointer;
+       }
+        @keyframes show {
+            0%, 100%{
+                transform: translateY(0px);
+                transition: 1s; 
+            }
+            50%{
+                transform: translateY(-8px);
+            }
+        }
+        
+        @keyframes run {
+            0%, 100%{
+                transform: translateX(0px);
+                transition: 1s; 
+            }
+            50%{
+                transform: translateX(-8px);
+            }
+        }
+        .ownn{
+            width: 100%;
+            height: fit-content;
+        }
+        .lay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.447);
+            z-index: 400;
+            display: none;
+        }
+        .hidden, .hidden2{
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1.3s ease-in-out, transform 1.3s ease-out;
+        }
+        .hidden2{
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.3s ease-in-out, transform 1.3s ease-out;
+        }
+        .show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="lay"></div>
+    <div class="cover">
+    <div class="head">
+      <div class="bryt">
+          <div class="studio">
+              <p class="bry">Bryt Studios</p>
+              <div class="dot"></div>
+          </div>
+          <p class="web">WEBSITE & BRAND DESIGN</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <input type="checkbox" id="toggle" hidden />
+      
+      <label for="toggle" class="toggle-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <a class="chat-btn" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Let's Talk</a>
+
+      <div class="sidebar">
+        <div class="head" id="headies">
+            <div class="bryt">
+                <div class="studio">
+                    <p class="">Bryt Studios</p>
+                    <div class="dot"></div>
+                </div>
+                <p class="web">WEBSITE & BRAND DESIGN</p>
+            </div>
+        </div>
+        
+            <div class="buzz">
+                <div class="box">Site Map</div>
+                <label for="toggle" class="close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div class="control">
+                <a href="index.html">Home</a>
+                <a href="website.html">Web Design</a>
+                <a href="brand.html">Brand Design</a>
+                <a href="maintenance.html">Maintenance</a>
+            </div>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+    </div>
+
+    <div class="ownn">
+
+   <div class="maintain">
+        <p>Maintenance</p>
+   </div>
+   <div class="usd">
+        <div class="but-carry">
+            <button>Price In ngn</button>
+            <button>PRICE IN USD</button>
+        </div>
+   </div>
+    <div class="section">
+        <div class="sect hidden2">
+          <div class="popular">
+             <p>Most Popular</p>
+         </div>
+         <div class="commerce">
+            <p class="proj">Ecommerce Store</p>
+            <p class="num">01</p>
+         </div>
+         <div class="speech">
+            <p>
+                This Maintenance Plan is for Dynamic <br>Stores or webshops with products. All <br>plans are billed yearly.
+            </p>
+         </div>
+
+         <div class="charge">
+            <p class="ngn">N40k</p>
+            <p class="mone">/mon</p>
+         </div>
+         <div class="button-d">
+            <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20E-commerce%20plan.%20">Select this plan</a>
+         </div>
+      </div>
+      <div class="sect hidden2" id="sect">
+        <div class="commerce">
+            <p class="proj">Service Website</p>
+            <p class="num">02</p>
+         </div>
+         <div class="speech">
+            <p>
+                This Maintenance Plan is for Static <br> websites with no product sales or stores. <br> All plans are billed yearly.
+            </p>
+         </div>
+
+         <div class="charge">
+            <p class="ngn">N30k</p>
+            <p class="mone">/mon</p>
+         </div>
+         <div class="button-d">
+            <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Service%20Website%20Plan.%20">Select this plan</a>
+         </div>
+      </div>
+      <div class="sect hidden2">
+        <div class="popular" id="pop">
+            <p>30 PRODUCTS/UNIT</p>
+        </div>
+        <div class="commerce">
+           <p class="proj">Product Upload</p>
+           <p class="num">03</p>
+        </div>
+        <div class="speech">
+           <p>
+            This store Upload plan is best for variable <br> & weight-based shipping products. <br>All plans are billed yearly.
+           </p>
+        </div>
+
+        <div class="charge">
+           <p class="ngn">N30k</p>
+           <p class="mone">/unit</p>
+        </div>
+        <div class="button-d">
+           <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Product%20Upload%20Plan.%20">Select this plan</a>
+        </div>
+      </div>
+   </div>
+
+   <div class="main">
+     <div class="extra ">
+       <div class="ext hidden">
+            <h2>Extras</h2>
+            <div class="all">
+                <div class="all2">
+                    <button class="firt">All</button>
+                    <button>For Stores</button>
+                </div>
+
+                <div class="all3">
+                    <button>For Websites</button>
+                    <button>One Time Options</button>
+                </div>
+            </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- products maintain  -->
+   <div class="products" id="prok">
+        <div class="product">
+            <div class="div hidden">
+                <div class="full">
+                    <div class="img-cc"><img src="website-1.webp" alt=""></div>
+                    <div class="design"><p>One Page <br> Design & Development</p></div>
+                </div>
+                <div class="key">
+                    N85,000
+                </div>
+                <div class="newpage">
+                    <p>
+                        If you need to add a new <br>extra website landing <br>page, service page,
+                         or any <br> other custom page, this <br>plan will work fine. Please <br>bear in mind this does not <br>include advance forms. 
+                         All  <br> plans are billed monthly.
+                    </p>
+                </div>
+                <div class="addbut">
+                    <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20One%20page%20Design%20"class="a">Add to Maintenance</a>
+                </div>
+            </div>
+            <div  class="div hidden">
+                <div class="full">
+                    <div class="img-cc"><img src="website2.webp" alt=""></div>
+                    <div class="design"><p>Store <br>Management Website Dev.</p></div>
+                </div>
+                <div class="key">
+                    N210,000
+                </div>
+                <div class="newpage" id="new">
+                    <p>
+                        The Store app will make it <br>easier for you to Manage <br> your store right from your <br> Smartphone. 
+                        You will be <br> able to upload products, <br>edit existing products, <br> access sales notifications <br> & analytics, fulfill orders, <br> and many more.
+                    </p>
+                </div>
+                <div class="addbut">
+                    <a class="a" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Store%20Management%20Plan%20">Add to Maintenance</a>
+                </div>
+            </div>
+            <div  class="div hidden">
+
+                <div class="full">
+                    <div class="img-cc"><img src="web3.webp" alt=""></div>
+                    <div class="design"><p>Abandoned <br> Cart Recovery Funnel</p></div>
+                </div>
+                <div class="key">
+                    N110,000
+                </div>
+                <div class="newpage" id="new">
+                    <p>
+                        Your store will now be able <br> to <strong>automatically</strong> recover <br> client
+                         who didn’t finish their <br>purchase in the checkout <br> process. 
+                        This Funnel also <br> comes with a free website <br> subscription one one-time <br> email marketing. All plans <br> are billed monthly.
+                </div>
+                <div class="addbut">
+                    <a class="a" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20E-commerce%20plan.%20">Add to Maintenance</a>
+                </div>
+            </div> 
+        </div>
+</div>
+
+   <!-- products maintain  -->
+   <div class="products pb-5" id="prok">
+    <div class="product">
+        <div class="div hidden">
+            <div class="full">
+                <div class="img-cc"><img src="form.webp" alt=""></div>
+                <div class="design"><p>Advanced <br> custom Form</p></div>
+            </div>
+            <div class="key">
+                N45,000
+            </div>
+            <div class="newpage">
+                <p>
+                    If you are looking to get an <br> advanced form with <br> custom fields for your <br> website, 
+                    to collect more <br>data from your visitors in <br>very easy ways, this plan <br> will set that up fo you and <br> get it running on its <br>designated page.
+                </p>
+            </div>
+            <div class="addbut">
+                <a class="a" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Advance%20Custom%20Form%20">Add to Maintenance</a>
+            </div>
+        </div>
+        <div  class="div hidden">
+            <div class="full">
+                <div class="img-cc"><img src="Google.webp" alt=""></div>
+                <div class="design"><p>Google My <br>Business <br>Integration</p></div>
+            </div>
+            <div class="key">
+                N110,000
+            </div>
+            <div class="newpage">
+                <p>
+                    If you need your website to <br> be properly listed in <br> <strong>Google search</strong> and also <br>
+                    correctly integrated with <br> your website data for <br> quicker search access, <br>
+                     make it easy for people to <br> find your website <br> alongside your Google <br> business details
+                </p>
+            </div>
+            <div class="addbut">
+                <a class="a" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Google%20Service%20Intergration.%20">Add to Maintenance</a>
+            </div>
+        </div>
+        <div  class="div hidden" id="div">
+
+            <div class="full">
+                <div class="img-cc"><img src="revamp.webp" alt=""></div>
+                <div class="design"><p>
+                    Website <br> Revamp
+                </p></div>
+            </div>
+            
+            <div class="newpage" id="new">
+                <p>
+                    If you wish to Modify your <br> website to look better than <br>
+                    what it currently is, with a <br>modern feel and <br>
+                     advanced functions <br>without spending too <br>much rebuilding from <br>scratch,
+                      this plan will do <br>just that for you, use the <br> contact details below.
+            </div>
+            <div class="addbut">
+                <a  href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Website.%20Revamp%20"  id="con">Contact For Plan</a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+<!-- products wey no show for lg mode  -->
+
+<div class="products" id="proc">
+
+    <div class="product">
+        <div class="div hidden">
+            <div class="full">
+                <div class="img-cc"><img src="website-1.webp" alt=""></div>
+                <div class="design"><p>One Page <br> Design & Development</p></div>
+            </div>
+            <div class="key">
+                N85,000
+            </div>
+            <div class="newpage">
+                <p>
+                    If you need to add a new extra website landing page, service page,
+                     or any other custom page,this plan will work fine. Please bear in mind this does not include advance forms. 
+                     All plans are billed monthly.
+                </p>
+            </div>
+            <div class="addbut">
+                <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20One%20Page%20Design%20">Add to Maintenance</button>
+            </div>
+        </div>
+        <div  class="div hidden" id="over">
+            <div class="full" id="full">
+                <div class="img-cc"><img src="website2.webp" alt=""></div>
+                <div class="design" id="des" style="color: black;"><p>Store Management <br> Website Dev.</p></div>
+            </div>
+            <div class="key" id="key">
+                N210,000
+            </div>
+            <div class="newpage" id="new">
+                <p class="noner" style="text-decoration: none; color: rgba(0, 0, 0, 0.726);">
+                    The Store web will make it easier for you to Manage your store right from your Smartphone. 
+                    You will be able to upload products, edit existing products, access sales notifications & analytics,
+                     fulfill orders, and many more.
+                </p>
+                
+            </div>
+            <div class="stbut">
+                <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Store%20Management%20Plan.%20">Add to Maintenance</a>
+            </div> 
+        </div>
+    </div>
+
+    <div class="product">
+        <div  class="div hidden">
+
+            <div class="full">
+                <div class="img-cc"><img src="web3.webp" alt=""></div>
+                <div class="design"><p>Abandoned Cart <br>Recovery Funnel</p></div>
+            </div>
+            <div class="key">
+                N110,000
+            </div>
+            <div class="newpage" id="new">
+                <p>
+                    Your store will now be able to <strong>automatically</strong> recover client
+                     who didn't finish their purchase in the checkout process. 
+                    This Funnel also comes with a free website subscription one one-time email marketing. 
+                    All plans are billed monthly.
+            </div>
+            <div class="addbut">
+                <a class="" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Abandon%20Cart%20Recovery%20Plan.%20">Add to Maintenance
+                </a>
+            </div>
+        </div> 
+
+        <div class="div hidden">
+            <div class="full">
+                <div class="img-cc"><img src="form.webp" alt=""></div>
+                <div class="design"><p>Advanced <br> custom Form</p></div>
+            </div>
+            <div class="key">
+                N45,000
+            </div>
+            <div class="newpage">
+                <p>
+                    If you are looking to get an advanced form with custom fields for your website, 
+                    to collect more data from your visitors in very easy ways, this plan will set that up fo you and get it running on its designated page.
+                </p>
+            </div>
+            <div class="addbut">
+                <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Advance%20Form%20Plan.%20">Add to Maintenance</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- products wey no show for lg mode  -->
+<div class="products" id="proc">
+    <div class="product">
+        <div  class="div hidden">
+            <div class="full">
+                <div class="img-cc"><img src="Google.webp" alt=""></div>
+                <div class="design"><p>Google Business<br>Integration</p></div>
+            </div>
+            <div class="key">
+                N110,000
+            </div>
+            <div class="newpage">
+                <p>
+                    If you need your website to be properly listed in <strong>Google search</strong> and also
+                    correctly integrated with your website data for quicker search access,
+                     make it easy for people to find your website alongside your Google business details
+                </p>
+            </div>
+            <div class="addbut">
+                <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20Google%20Service%20Intergration%20Plan.%20">Add to Maintenance</a>
+            </div>
+        </div>
+
+
+        <div  class="div hidden" id="div">
+
+            <div class="full">
+                <div class="img-cc"><img src="revamp.webp" alt=""></div>
+                <div class="design"><p>
+                    Website <br> Revamp
+                </p></div>
+            </div>
+            
+            <div class="newpage" id="new">
+                <p>
+                    If you wish to Modify your  website to look better than 
+                    what it currently is, with a modern feel and 
+                     advanced functions without spending too much rebuilding from scratch,
+                      this plan will do just that for you, use the  contact details below.
+            </div>
+            <div class="addbut">
+                <a  href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Revamp%20Plan.%20"  id="con">Contact For Plan</a>
+            </div>
+        </div> 
+    </div>
+
+
+    </div>
+</div>
+
+<!-- products wey no show for lg mode  -->
+
+
+<div class="website">
+        <div class="more hidden">
+            <h2>More Than A Website.</h2>
+            <p>
+                We Craft Websites That Evoke Every Emotion. <br>
+                Our speciality Lies In Propelling Brands, <br>
+                Far Above Their Competition, <br>
+                Ensuring They Stand Out Significantly. <br>
+            </p>
+            <div>
+                
+                <a href="">VIEW ALL PROJECTS</a>
+                <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">I NEED A WEBSITE</a>
+            </div>
+        </div> 
+        <div class="more2 hidden">
+            <div class="cov">
+                <p>EXPERIENCE</p>
+                <p>COVERED</p>
+            </div>
+            <div class="since">
+                <p>Since 2020</p>
+                <p style="margin-left: 32px;">5+Countries</p>
+            </div>
+            <div class="cov">
+                <p>PROJECTS</p>
+                <p style="margin-left: 32px;">TEAM</p>
+            </div>
+            <div class="since">
+                <p>25+Websites</p>
+                <p class="">5Members</p>
+            </div>
+        </div>  
+</div>
+
+
+
+<!-- work together  -->
+ <div class="tin"></div>
+
+<div class="sect1 row hidden">
+    <div class="cart">
+      <div class="imgs"></div>
+        <div class="work">
+      <h1 >Let's Work</h1>
+      <p class="span">together</p>
+        </div>    
+    </div>
+    <div class="asside d-none d-md-flex">
+     <aside  id="aside">
+      <a href="" class="hover">web design</a>
+      <a href="brand.html" class="hover">brand design</a>
+      <a href="maintenance.html" class="hover">maintenance</a>
+     </aside>
+     <article>
+      <a href="" class="hover">social media</a>
+      <a href="brand.html" class="hover">logo design</a>
+      <a href="" class="hover">websites</a>
+     </article>
+    </div>
+  
+
+    <div class="service d-block  d-md-none">
+      <div class="serv">
+        <p>Services</p>
+        <div id="cover">
+          <div  id="right" style="width: fit-content;" class="col-6 col-sm-6">
+            <div>
+              <a href="" class="hover2">web design</a>
+            </div>
+            <div><a href="brand.html" class="hover2">brand design</a></div>
+            <div>
+              <a href="maintenance.html" class="hover2">maintenance</a>
+            </div>
+           </div>
+           <div id="right2" style="width: fit-content;" class="col-6 col-sm-6">
+            <div><a href="" class="hover2">social media</a></div>
+            <div><a href="brand.html" class="hover2">logo design</a></div>
+            <div><a href="" class="hover2">websites</a></div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="tin "></div> -->
+  </div>
+
+  <div class="footer hidden">
+    <div class="footer-div">
+        <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Send us a Message</a></div>
+        <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Whatsapp Chat</a></div>
+    </div>
+        <div class="footer-div" id="last">
+            <div class="a-div">
+                <div id="acad"><a href="tel:+2349017290826">Call</a></div>
+                <div id="acad"><a href="https://www.instagram.com/icelynbright98?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Instagram</a></div>
+            </div>
+            <div class="a-div2">
+                <div id="acad"><a href="index.html">Home</a></div>
+            </div>
+        </div> 
+  </div>
+  <div class="end hidden">
+        <marquee behavior="" direction="">
+            <ul>
+                <li><a href="">Bryt Studios</a></li>
+                <li><a href="">Web Developer & Brand Designer</a></li>
+                <li><a href="">Logo Design</a></li>
+            </ul>
+        </marquee>
+        <p>&copy; BrytStudios All Right Reserved 2025</p>
+    </div>
+
+</div>
+
+    <script>
+        let clic =document.querySelector(".click");
+        let body =document.querySelector(".ownn");
+        let body2 =document.querySelector("body");
+        let lay =document.querySelector(".lay");
+        let sitemap =document.querySelector(".sitemap");
+        let plan = document.querySelector(".plan")
+        let planA = document.querySelector(".plan a")
+   
+        // document.querySelector(".extras").addEventListener("click", (e)=>{
+        //     e.preventDefault();
+        //     plan.classList.toggle("plan")
+        //     plan.style.width = "80%";
+        //     plan.style.background = "ghostwhite";
+        //     plan.style.border = "2px solid rgb(195, 180, 180)";
+        //     plan.style.height ="fit-content";
+        //     plan.style.margin  = "10px 2%"
+        //     plan.style.padding = "20px 20px"
+        //     plan.style.borderRadius = "10px"
+        //     planA.style.color = "rgb(125, 112, 112)"
+        //     planA.style.textDecoration = "none";
+        //     planA.style.fontSize = "23px";
+        // })
+     
+        // text animation on the text
+            document.addEventListener("DOMContentLoaded", function(){
+                const observer = new IntersectionObserver(
+                    (entries, observer) =>{
+                        entries.forEach((entry) =>{
+                            if(entry.isIntersecting && window.scrollY > 200){
+                                entry.target.classList.add("show");
+                                observer.unobserve(entry.target);
+                            }
+                            else{
+                                entry.target.classList.remove("show");
+                            }
+                        })
+
+                    }, {threshold: 0.2}
+                );
+                document.querySelectorAll(".hidden").forEach((element) =>{
+                    observer.observe(element);
+                });
+            })
+
+            // the first 3 rows 
+            document.addEventListener("DOMContentLoaded", function(){
+                const observer = new IntersectionObserver(
+                    (entries, observer) =>{
+                        entries.forEach((entry) =>{
+                            if(entry.isIntersecting){
+                                entry.target.classList.add("show");
+                                observer.unobserve(entry.target);
+                            }
+                            else{
+                                entry.target.classList.remove("show")
+                                // observer.unobserve(entry.target);
+                            }
+                        })
+                    }, {threshold: 0.2}
+                );
+                document.querySelectorAll(".hidden2").forEach((element) =>{
+                    observer.observe(element);
+                });
+            })
+
+        // text animation on the text ends here
+
+       let noner = document.querySelector(".noner")
+       noner.addEventListener("click", (e)=>{
+        e.preventDefault()
+       })  
+       let key = document.querySelector("#key")
+       key.addEventListener("click", (e)=>{
+        e.preventDefault()
+       }) 
+       
+       let full = document.querySelector("#full")
+       full.addEventListener("click", (e)=>{
+        e.preventDefault()
+       })
+       
+    </script>
+    
+    <script src="bootfiles/jquery-slim.min.js"></script>
+    <script src="bootfiles/popper.min.js"></script>
+    <script src="bootfiles/bootstrap.js"></script>
+</body>
+</html>

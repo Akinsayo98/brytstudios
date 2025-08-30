@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brytStudio/brand</title>
+    <link rel="stylesheet" href="brand.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="website icon" type="jpg" href="homepicture.jpg">
+
+    <!-- <script src="..//java/jQuery/jquery.js"></script> -->
+    <style>
+   .lay{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.447);
+            z-index: 400;
+            display: none;
+        }
+
+        @keyframes show {
+            0%, 100%{
+                transform: translateY(0px);
+                transition: 1s; 
+            }
+            50%{
+                transform: translateY(-8px);
+                transition: 1s; 
+            }
+        
+        }
+        .hidden, .hidden2{
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s ease-in-out, transform 1.3s ease-out;
+        }
+        .hidden2{
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-in-out, transform 1.3s ease-out;
+        }
+        .show{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+  <div class="lay"></div>
+
+    <!-- new media query  -->
+ 
+  <div class="cover">
+    <div class="head">
+      <div class="bryt">
+          <div class="studio">
+              <p>Bryt Studios</p>
+              <div class="dot"></div>
+          </div>
+          <p class="web">WEBSITE & BRAND DESIGN</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <input type="checkbox" id="toggle" hidden />
+      
+      <label for="toggle" class="toggle-icon">
+        <i class="fa fa-bars"></i>
+      </label>
+
+      <a class="chat-btn" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Let's Talk</a>
+
+      <div class="sidebar">
+        <div class="head" id="head">
+            <div class="bryt">
+                <div class="studio">
+                    <p>Bryt Studios</p>
+                    <div class="dot"></div>
+                </div>
+                <p class="web">WEBSITE & BRAND DESIGN</p>
+            </div>
+        </div>
+        
+            <div class="buzz">
+                <div class="box">Site Map</div>
+                <label for="toggle" class="close-btn">
+                    <i class="fa fa-times" style="color: red;" aria-hidden="true"></i>
+                </label>
+            </div>
+            <div class="control">
+                <a href="index.html">Home</a>
+                <a href="website.html">Web Design</a>
+                <a href="brand.html">Brand Design</a>
+                <a href="maintenance.html">Maintenance</a>
+            </div>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+    </div>
+<!-- new media query  -->  
+
+    <div class="header sticky-top">
+
+      <div class="sitemap">
+        
+        <div class="site">
+            <p>Site map</p>
+            <div class="inn"><i class="fa fa-times" aria-hidden="true"></i></div>
+        </div>
+        <div id="ul">
+            <ul class="mod">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Web Design</a></li>
+                <li><a href="brand.html">Brand Design</a></li>
+                <li><a href="" class="extras">Extra Services</a></li>
+            </ul>
+        </div>
+        <div class="plan" id="plan">
+            <a href="maintenance.html" class="mint">Web Maintenance Plan</a>
+        </div>
+    </div>
+        <div class="head" id="head">
+            <div class="img"><img src="..//homepicture.jpg" alt=""></div>
+            <div class="bryt">
+                <div class="studio">
+                    <p>Bryt Studios</p>
+                    <div class="dot"></div>
+                </div>
+                <p class="web">WEBSITE & BRAND DESIGN</p>
+            </div>
+        </div>
+
+        <div class="head2">
+
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">Website</a></li>
+                    <li><a href="" class="brand">Branding</a></li>
+                    <li><a href="">Service<i class="text-white ml-2 fa fa-angle-double-down" aria-hidden="true"></i>
+                        <div class="ul">
+                            <ul id="uls">
+                                <li><a href="maintenance.html">WEBSITE MAINTENANCE PLAN</a></li>
+                            </ul>
+                        </div>
+                    </a></li>
+                </ul>
+                <div class="trt">
+                  <div><i class="fa fa-navicon click" aria-hidden="true"></i></div>
+                  <div class="new">
+                    <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20" id="home">Let's Chat</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="move">
+        <marquee behavior="" direction="">
+            <h2>LOGO DESIGN - LOGO DESIGN - LOGO DESIGN</h2>
+        </marquee>
+    </div>
+
+    <!-- price  -->
+
+    <div class="price">
+      <div>
+         <button class="naira">NGN</button>
+         <button class="dollar">USD</button>
+      </div>  
+    </div>
+<!-- logod rows  -->
+
+<!-- logo rows  -->
+ <div class="logo">
+   <div class="picture">
+        <div class="card " id="body">
+        <div class="card-img-top">
+            <img class="pict" src="Logo.png" alt="">
+        </div>
+        <div class="card-footer">
+            <p class="king text-light">MASCOT LOGO</p>
+             <p class="money text-muted">N150,000</p> 
+          <div>
+                <div class="div">
+                    <div class="d-flex">
+                        <i id="plusBt" class="fa fa-plus plus" aria-hidden="true"></i>
+                        <i id="minusBt" class="fa fa-minus hide" aria-hidden="true"></i>
+                    </div>
+                    <button class="but text-light" id="buter">CLICK TO SEE ALL FEATURES</button>
+                </div>
+                
+          </div>
+             
+             <div class="pack" id="pack">
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>2 Logo Samples</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Unlimited Revision</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>5 Reaalistic Mock-ups</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>HD Tranparent Logo Files</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Logo Use Documentation</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>.JPG | .PNG | .AI | .EPS</p>
+             </div>
+             <a class="ord" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20want%20the%20Mascot%20Logo%20For%20My%20Brand"id="con">Order this service</a>
+        </div>
+        
+        </div>
+    
+        <div class="card " id="body">
+        <div class="card-img-top">
+            <img class="pict" src="Bake and deliver .jpg" alt="">
+        </div>
+        <div class="card-footer">
+            <p class="king text-light">ABSTRACT LOGO</p>
+             <p class="money text-muted">N120,000</p> 
+          <div class="nav">
+                <div class="div">
+                    <div class="d-flex">
+                        <i id="plusBt2" class="fa fa-plus plus2" aria-hidden="true"></i>
+                        <i id="minusBt2" class="fa fa-minus hide2" aria-hidden="true"></i>
+                    </div>
+                    <button class="but text-light but2" id="buter">CLICK TO SEE ALL FEATURES</button>
+                </div> 
+                
+          </div>
+             
+             <div class="pack" id="pack">
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>2 Logo Samples</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Unlimited Revision</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>5 Reaalistic Mock-ups</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>HD Tranparent Logo Files</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Logo Use Documentation</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>.JPG | .PNG | .AI | .EPS</p>
+             </div>
+             <a class="ord" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20want%20the%20Abstract%20Logo%20For%20My%20Brand"id="con">Order this service</a>
+        </div>
+        </div>
+   </div>
+    
+  <div class="picture" id="pic2">
+        <div class="card " id="body">
+        <div class="card-img-top">
+            <img class="pict" src="Adirr beauty .jpg" alt="">
+        </div>
+        <div class="card-footer">
+            <p class="king text-light">OTHER BRANDING</p>
+             <p class="money text-muted">PRICES</p> 
+          <div>
+                <div class="div">
+                    <div class="d-flex">
+                        <i id="plusBt3" class="fa fa-plus plus3" aria-hidden="true"></i>
+                        <i id="minusBt3" class="fa fa-minus hide3" aria-hidden="true"></i>
+                    </div>
+                    <button class="but text-light but3" id="buter">CLICK TO SEE ALL FEATURES</button>
+                </div>
+                
+          </div>
+             
+             <div class="pack">
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Business Card Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Flier Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Letter Heading Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Banner Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Logo Animation - 50k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Product Label Design - 100-200k</p>
+             </div>
+             <a class="ord" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20want%20the%20Other%20nig%20Design%20For%20My%20Brand"id="con">Order this service</a>
+        </div>
+        
+        </div>
+        <div class="card " id="body">
+        <div class="card-img-top">
+            <img class="pict" src="Punto cera.jpg" alt="">
+        </div>
+        <div class="card-footer">
+            <p class="king text-light">OTHER BRANDING</p>
+             <p class="money text-muted">PRICES</p> 
+          <div>
+                <div class="div">
+                    <div class="d-flex">
+                        <i id="plusBt4" class="fa fa-plus plus4" aria-hidden="true"></i>
+                        <i id="minusBt4" class="fa fa-minus hide4" aria-hidden="true"></i>
+                    </div>
+                    <button class="but text-light but2" id="buter">CLICK TO SEE ALL FEATURES</button>
+                </div>
+                
+          </div>
+             
+             <div class="pack" id="pack">
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Business Card Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Flier Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Letter Heading Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Banner Design - 20k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Logo Animation - 50k</p>
+                <p class="text-muted"><i class="fa fa-check text-light pr-2" aria-hidden="true"></i>Product Label Design - 100-200k</p>
+             </div>
+             <a class="ord" href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20want%20the%20Other%20nig%20Design%20For%20My%20Brand"id="con">Order this service</a>
+           
+        </div>
+        </div>
+</div>
+ </div>
+<!-- logod rows  -->
+
+<div class="website">
+    <div class="more hidden">
+        <h2>GOLDEN BRANDS GLEAM<br>GREATLY.</h2>
+        <p>
+            We Craft Websites That Evoke Every Emotion.<br>Our speciality Lies In Propelling Brands,<br>
+            Far Above Their Competition, <br>Ensuring They Stand Out Significantly.
+        </p>
+        <div>
+            
+            <a href="">VIEW ALL PROJECTS</a>
+            <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">
+                I NEED A WEBSITE</a>
+        </div>
+    </div> 
+    <div class="more2 hidden">
+        <div class="cov hidden">
+            <p>EXPERIENCE</p>
+            <p>COVERED</p>
+        </div>
+        <div class="since hidden">
+            <p>Since 2020</p>
+            <p style="margin-left: 32px;">5+Countries</p>
+        </div>
+        <div class="cov hidden">
+            <p>LOGOS</p>
+            <p class="twoo">200+</p>
+        </div>
+        <div class="since hidden">
+            <p>25+Websites</p>
+            <p class="">5Members</p>
+        </div>
+    </div>  
+    <div class="diva hidden">
+            
+      <a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">
+          I NEED A WEBSITE</a>
+  </div>
+
+</div>
+
+<!-- more rows logos-->
+ <div class="more-rows hidden">
+    <div class="first-rows">
+        <div class="card" id="crd">
+            <div class="card-img-top">
+              <div class="pic" id="pic1"></div>
+              <!-- <img class="pic" src="..//homepicture.jpg" id="none" alt=""> -->
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Esha Designer</p>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-img-top">
+              <div class="pic" id="picer2" alt=""></div>
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Home Health Care</p>
+            </div>
+          </div>
+    </div>
+    <div class="first-rows" id="first-rows">
+        <div class="card">
+            <div class="card-div-top">
+              <div class="pic" id="picer3"></div>
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Punto Cera</p>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-img-top">
+              <img class="pic" id="picer2" src="..//Eco Engy.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Eco Engy</p>
+            </div>
+          </div>
+    </div>
+ </div>
+
+ <!-- more rows logos-->
+ <div class="more-rows hidden" id="more-row">
+    <div class="first-rows">
+        <div class="card">
+            <div class="card-img-top" >
+              <img class="pic" id="picer2" src="..//Adirr beauty .jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Adire beauty</p>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-img-top">
+              <img class="pic" id="picer2" src="..//Bake and deliver .jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Bake & deliver</p>
+            </div>
+          </div>
+    </div>
+    <div class="first-rows" id="first-rows">
+        <div class="card">
+            <div class="card-img-top">
+              <img class="pic" id="picer2" src="..//Logo.png" alt="">
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">lion king</p>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-img-top">
+              <img class="pic" id="picer2" src="..//care.jpg" alt="">
+            </div>
+            <div class="card-footer">
+              <p class="king" id="king">Care <i class="fa fa-heart text-danger" aria-hidden="true"></i></p>
+            </div>
+          </div>
+    </div>
+ </div>
+
+
+
+<div class="sect1  hidden">
+    <div class="cart" >
+      <div class="imgs"></div>
+        <div class="work">
+      <h1 >Let's Work</h1>
+      <p class="span">together</p>
+        </div>    
+    </div>
+    <div class="asside" id="sec">
+     <aside  id="aside ">
+      <a href="" class="hover">web design</a>
+      <a href="brand.html" class="hover">brand design</a>
+      <a href="maintenance.html" class="hover">maintenance</a>
+     </aside>
+     <article>
+      <a href="" class="hover">social media</a>
+      <a href="brand.html" class="hover">logo design</a>
+      <a href="" class="hover">websites</a>
+     </article>
+    </div>
+  
+
+    <div class="service" id="lastsoc">
+      <div class="serv">
+        <p>Services</p>
+        <div id="cover">
+          <div  id="right" class="col-6 col-sm-6">
+            <div>
+              <a href="" class="hover2">web design</a>
+            </div>
+            <div><a href="brand.html" class="hover2">brand design</a></div>
+            <div>
+              <a href="maintenance.html" class="hover2">maintenance</a>
+            </div>
+           </div>
+           <div id="right2" class="col-6 col-sm-6">
+            <div><a href="" class="hover2">social media</a></div>
+            <div><a href="brand.html" class="hover2">logo design</a></div>
+            <div><a href="" class="hover2">websites</a></div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="tin "></div> -->
+  </div>
+
+  <!-- footer begins here  -->
+
+  <div class="footer hidden">
+    <div class="footer-div">
+        <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Send us a Message</a></div>
+        <div class="acad"><a href="https://wa.me/+2348134891064?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20" class="what">Whatsapp Chat</a></div>
+    </div>
+        <div class="footer-div" id="last">
+            <div class="a-div">
+                <div id="acad"><a href="tel:+2349017290826">Call</a></div>
+                <div id="acad"><a href="https://www.instagram.com/icelynbright98?text=Hello,%20*BrytStudios*%20I%20am%20coming%20from%20your%20website,%20I%20Need%20A%20Design.%20">Instagram</a></div>
+            </div>
+            <div class="a-div2">
+                <div id="acad"><a href="index.html">Home</a></div>
+            </div>
+        </div> 
+  </div>
+  <div class="end hidden">
+        <marquee behavior="" direction="">
+            <ul>
+                <li><a href="">Bryt Studios</a></li>
+                <li><a href="">Web Developer & Brand Designer</a></li>
+                <li><a href="">Logo Design</a></li>
+            </ul>
+        </marquee>
+        <p>&copy; BrytStudios All Right Reserved 2025</p>
+    </div>
+
+</div>
+  <!-- footer stops here  -->
+
+
+
+
+
+    <script>
+        //  disappearing header 
+        let lastScrollTop = 0;
+        let header = document.querySelector(".header");
+        window.addEventListener("scroll", ()=>{
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+        if( scrollTop > lastScrollTop){
+        header.style.top = "-110px";
+        }
+        else{
+        header.style.top = "0";
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+    // click here to see more code
+        let but = document.querySelectorAll(".but");
+        let plus = document.querySelector("#plusBt");
+        let min = document.querySelector("#minusBt");
+
+        let plus2 = document.querySelector("#plusBt2");
+        let min2 = document.querySelector("#minusBt2");
+    
+        let plus3 = document.querySelector("#plusBt3");
+        let min3 = document.querySelector("#minusBt3");
+
+        let plus4 = document.querySelector("#plusBt4");
+        let min4 = document.querySelector("#minusBt4");
+
+        let pack = document.querySelectorAll(".pack");
+
+        but[0].addEventListener("click", (e)=>{
+            pack[0].classList.toggle("pack")
+            plus.classList.toggle("hide")
+            min.classList.toggle("hide")      
+        });
+
+        but[1].addEventListener("click", (e)=>{
+            pack[1].classList.toggle("pack")
+            plus2.classList.toggle("hide2")
+            min2.classList.toggle("hide2")      
+        });
+
+        
+        but[2].addEventListener("click", (e)=>{
+            pack[2].classList.toggle("pack")
+            plus3.classList.toggle("hide3")
+            min3.classList.toggle("hide3")      
+        });
+
+        but[3].addEventListener("click", (e)=>{
+            pack[3].classList.toggle("pack")
+            plus4.classList.toggle("hide4")
+            min4.classList.toggle("hide4")      
+        });
+    // click here to see more code
+
+
+    // price is usd 
+    let money = document.querySelectorAll(".money");
+    let dollar = document.querySelector(".dollar")
+    let naira = document.querySelector(".naira")
+
+    dollar.addEventListener("click", ()=>{
+        money[0].textContent = "$120";
+        money[1].textContent = "$100";
+    })
+    naira.addEventListener("click", ()=>{
+        money[0].textContent = "N150,000";
+        money[1].textContent = "N120,000";
+
+    })
+
+
+    // sitemap drop 
+    let sitemap =document.querySelector(".sitemap");
+    let clic =document.querySelector(".click");
+    let body2 =document.querySelector("body");
+    let plan = document.querySelector(".plan")
+    let planA = document.querySelector(".plan a")
+    let lay =document.querySelector(".lay");
+    
+    clic.addEventListener("click", ()=>{
+            lay.style.display = "block";
+            sitemap.style.display = "block";
+            body2.style.display = "block";
+            body2.classList.add("lay");
+            // body.style.filter = "blur(2px)"
+            // body.style.opacity = 0.4
+        });
+        document.querySelector(".sitemap i").addEventListener("click", ()=>{
+            sitemap.style.display = "none";
+            lay.style.display = "none";
+            body2.classList.remove("lay");
+            
+        })
+        document.querySelector(".extras").addEventListener("click", (e)=>{
+            e.preventDefault();
+            plan.classList.toggle("plan")
+            plan.style.width = "80%";
+            plan.style.background = "ghostwhite";
+            plan.style.border = "2px solid rgb(195, 180, 180)";
+            plan.style.height ="fit-content";
+            plan.style.margin  = "10px 2%"
+            plan.style.padding = "20px 20px"
+            plan.style.borderRadius = "10px"
+            planA.style.color = "rgb(125, 112, 112)"
+            planA.style.textDecoration = "none";
+            planA.style.fontSize = "23px";
+            planA.style.paddingBottom = "23px";
+        })
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function(){
+          const observer = new IntersectionObserver(
+              (entries, observer) =>{
+                  entries.forEach((entry) =>{
+                      if(entry.isIntersecting  && window.scrollY > 200){
+                          entry.target.classList.add("show");
+                          observer.unobserve(entry.target);
+                      }
+                      else{
+                          entry.target.classList.remove("show");
+                      }
+                  })
+
+              }, {threshold: 0.2}
+          );
+          document.querySelectorAll(".hidden").forEach((element) =>{
+              observer.observe(element);
+          });
+      })
+
+
+      document.addEventListener("DOMContentLoaded", function(){
+                const observer = new IntersectionObserver(
+                    (entries, observer) =>{
+                        entries.forEach((entry) =>{
+                            if(entry.isIntersecting){
+                                entry.target.classList.add("show");
+                                observer.unobserve(entry.target);
+                            }
+                            else{
+                                entry.target.classList.remove("show")
+                                // observer.unobserve(entry.target);
+                            }
+                        })
+                    }, {threshold: 0.2}
+                );
+                document.querySelectorAll(".hidden2").forEach((element) =>{
+                    observer.observe(element);
+                });
+            })
+            document.addEventListener("DOMContentLoaded", function(){
+                const observer = new IntersectionObserver(
+                    (entries, observer) =>{
+                        entries.forEach((entry) =>{
+                            if(entry.isIntersecting){
+                                entry.target.classList.add("show");
+                                observer.unobserve(entry.target);
+                            }
+                            else{
+                                entry.target.classList.remove("show")
+                            }
+                        })
+                    }, {threshold: 0.1}
+                );
+                document.querySelectorAll(".hidden2").forEach((element) =>{
+                    observer.observe(element);
+                });
+            })
+
+    </script>
+
+    <!-- <script>
+      $(document).ready(function(){
+        $pic1 = $("#pic1")
+        $none = $("#none")
+
+        $pic1.mouseover(function(){
+          $pic1.slideUp(4000);
+          $none.slideDown(5000)
+        })
+      })
+    </script> -->
+</body>
+</html>
