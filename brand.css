@@ -1137,6 +1137,7 @@ ul li a:hover{
 
 
 
+
 /* media queries  */
 @media screen and (max-width:1220px){
     .card-footer .div{
@@ -1235,6 +1236,9 @@ ul li a:hover{
     .header .head2 ul{
         display: none;
     }
+    .move{
+    margin-top: 100px;
+}
    
     .header{
         display: none;
