@@ -2169,7 +2169,7 @@ img{
     }
 }
 @media screen and (max-width:764px) {
-    
+      
     .con1 .txt, .txt2{
         display: none;
     }
@@ -2202,6 +2202,7 @@ img{
         display: block;
         width: 100% !important;
         margin: 0px 0px;
+        margin-top: 120px;
     }
     #con3{
         display: block;
