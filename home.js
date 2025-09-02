@@ -4,6 +4,8 @@
 let lastScrollTop = 0;
 let header = document.querySelector("header");
 
+
+
 window.addEventListener("scroll", ()=>{
 const scrollTop = window.pageYOffset ||
 document.documentElement.scrollTop

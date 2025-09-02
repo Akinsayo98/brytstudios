@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="website icon" type="jpg" href="homepicture.jpg">
     <style>
       
       @media (max-width:540px) {
@@ -73,6 +74,18 @@
             opacity: 1;
             transform: translateY(0);
         }
+         .cover.hide {
+  transform: translateY(-100%); /* move header out of view */
+  
+}
+.cover{
+  position: fixed;
+    top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+      backdrop-filter: blur(10px);
+}
 
     </style>
 </head>
@@ -687,10 +700,27 @@
        let full = document.querySelector("#full")
        full.addEventListener("click", (e)=>{
         e.preventDefault()
-       })
-       
+       });
     </script>
     
+    <script>
+        let lastScroll = 0;
+  const header2 = document.querySelector(".cover");
+
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 50) {
+      // Scrolling down
+      header2.classList.add("hide");
+    } else {
+      // Scrolling up
+      header2.classList.remove("hide");
+    }
+
+    lastScroll = currentScroll;
+  });
+    </script>
     <script src="bootfiles/jquery-slim.min.js"></script>
     <script src="bootfiles/popper.min.js"></script>
     <script src="bootfiles/bootstrap.js"></script>
